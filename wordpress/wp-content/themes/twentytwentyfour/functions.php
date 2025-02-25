@@ -204,3 +204,7 @@ if ( ! function_exists( 'twentytwentyfour_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
+
+//Disable plugin updates------------------------------------------------------------------------------------------------
+require_once get_stylesheet_directory() . '/inc/plugin-update-disabler.php';
+//----------------------------------------------------------------------------------------------------------------------
