@@ -33,15 +33,12 @@
 					<?php _e( 'Export Site', AI1WM_PLUGIN_NAME ); ?>
 				</h1>
 
-				<?php include AI1WM_TEMPLATES_PATH . '/common/report-problem.php'; ?>
 
 				<form action="" method="post" id="ai1wm-export-form" class="ai1wm-clear">
 
-					<?php include AI1WM_TEMPLATES_PATH . '/export/find-replace.php'; ?>
 
 					<?php do_action( 'ai1wm_export_left_options' ); ?>
 
-					<?php include AI1WM_TEMPLATES_PATH . '/export/advanced-settings.php'; ?>
 
 					<?php include AI1WM_TEMPLATES_PATH . '/export/export-buttons.php'; ?>
 
