@@ -25,7 +25,7 @@
 ?>
 
 <div class="ai1wm-container">
-	<div class="ai1wm-row">
+	<div class="">
 		<div class="ai1wm-left">
 			<div class="ai1wm-holder">
 				<h1>
@@ -51,19 +51,6 @@
 
 				<?php do_action( 'ai1wm_import_left_end' ); ?>
 
-			</div>
-		</div>
-		<div class="ai1wm-right">
-			<div class="ai1wm-sidebar">
-				<div class="ai1wm-segment">
-					<?php if ( ! AI1WM_DEBUG ) : ?>
-						<?php include AI1WM_TEMPLATES_PATH . '/common/share-buttons.php'; ?>
-					<?php endif; ?>
-
-					<h2><?php _e( 'Leave Feedback', AI1WM_PLUGIN_NAME ); ?></h2>
-
-					<?php include AI1WM_TEMPLATES_PATH . '/common/leave-feedback.php'; ?>
-				</div>
 			</div>
 		</div>
 	</div>
