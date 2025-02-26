@@ -88,17 +88,6 @@
 								</tbody>
 							</table>
 						<?php endif; ?>
-						<div class="ai1wm-backups-create">
-							<p class="ai1wm-backups-empty <?php echo $backups ? 'ai1wm-hide' : null; ?>">
-								<?php _e( 'There are no backups available at this time, why not create a new one?', AI1WM_PLUGIN_NAME ); ?>
-							</p>
-							<p>
-								<a href="<?php echo esc_url( network_admin_url( 'admin.php?page=ai1wm_export' ) ); ?>" class="ai1wm-button-green">
-									<i class="ai1wm-icon-export"></i>
-									<?php _e( 'Create backup', AI1WM_PLUGIN_NAME ); ?>
-								</a>
-							</p>
-						</div>
 					<?php else : ?>
 						<div class="ai1wm-clear ai1wm-message ai1wm-red-message">
 							<?php

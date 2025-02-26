@@ -35,22 +35,10 @@
 						<i class="ai1wm-icon-cloud-upload"></i><br />
 						<?php _e( 'Drag & Drop to upload', AI1WM_PLUGIN_NAME ); ?>
 					</p>
-					<div class="ai1wm-button-group ai1wm-button-import ai1wm-expandable">
+					<div class="ai1wm-button-group ai1wm-button-import">
 						<div class="ai1wm-button-main">
-							<span><?php _e( 'Import From', AI1WM_PLUGIN_NAME ); ?></span>
-							<span class="ai1mw-lines">
-								<span class="ai1wm-line ai1wm-line-first"></span>
-								<span class="ai1wm-line ai1wm-line-second"></span>
-								<span class="ai1wm-line ai1wm-line-third"></span>
-							</span>
+                            <?php echo apply_filters( 'ai1wm_import_file', Ai1wm_Template::get_content( 'import/button-file' ) ); ?>
 						</div>
-						<ul class="ai1wm-dropdown-menu ai1wm-import-providers">
-							<?php foreach ( apply_filters( 'ai1wm_import_buttons', array() ) as $button ) : ?>
-								<li>
-									<?php echo $button; ?>
-								</li>
-							<?php endforeach; ?>
-						</ul>
 					</div>
 				</div>
 			</div>
